@@ -1,0 +1,84 @@
+* {
+  background-color: #09090a;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 48px;
+}
+#form-habits {
+  display: flex;
+  width: fit-content;
+  padding: 182px 48px 48px;
+}
+.habits {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.habit {
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  display: flex;
+}
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.day div {
+  margin-bottom: 8px;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+  align-items: center;
+  text-align: center;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: solid 2px #8b5cf6;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 64px;
+  height: 64px;
+  background-color: #18181b;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+input:checked {
+  background-color: #9d7cff;
+  border: 2px solid #a78bfa;
+}
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
+}
